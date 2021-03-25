@@ -1,4 +1,3 @@
-const url = "https://rickandmortyapi.com/api/character/";
 const random = document.getElementById('btn');
 
 random.addEventListener('click', () => {
@@ -6,7 +5,15 @@ random.addEventListener('click', () => {
             return Math.floor(Math.random() * Math.floor(max));
         }
     randomNumber = randomSearch(19);
+
+    function randomPage(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+randomPageNumber = randomPage(34);
+console.log(randomPageNumber);
     
+    const url = `https://rickandmortyapi.com/api/character/?page=${randomPageNumber}`;
+
     fetch(url)
      .then(response => response.json())
      .then(data => {
