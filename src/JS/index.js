@@ -14,6 +14,14 @@ random.addEventListener('click', () => {
         let element = document.getElementById('elem')
         element.innerHTML = `<p>${data.results[randomNumber].name}</p>
         <img src="${data.results[randomNumber].image}" alt="">
+        `;
+
+        let description = document.getElementById('description')
+        description.innerHTML = `<p>Gender: ${data.results[randomNumber].gender}</p>
+        <p>Species: ${data.results[randomNumber].species}</p>
+        <p>Origin: ${data.results[randomNumber].origin.name}</p>
+        <p>Location: ${data.results[randomNumber].location.name}</p>
+        <p>Status: ${data.results[randomNumber].status}</p>
         `
     
          console.log(data)

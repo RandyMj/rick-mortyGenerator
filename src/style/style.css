@@ -63,3 +63,18 @@ h1 {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.description {
+    width: 375px;
+    height: 350px;
+    background-color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 10px;
+    grid-area: 3/3/4/4;
+    margin-top: 25px;
+}
+.description p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
